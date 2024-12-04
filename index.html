@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>├» { [Código Creativo Dev] } «┤ </title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Somos una empresa dedicada al Desarrollo de Software. n Código Creativo Dev, estamos listos para escucharte y ayudarte a llevar tus ideas al siguiente nivel. Ya sea que necesites desarrollar un proyecto desde cero, mejorar tus sistemas actuales o resolver cualquier duda, nuestro equipo está aquí para ti.">
+  <meta name="keywords" content="Desarrollo de Software, Diseño de Sitios Web, Empresa de desarrollo de sw, Código Creativo Dev.">
 
-  <link href="assets/img/_faviconapp.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -69,8 +69,6 @@
   </header>
 
   <main class="main">
-
-    <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
 
       <div class="container">
@@ -86,9 +84,8 @@
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
 
-    <!-- About Section -->
     <section id="about" class="about section light-background">
 
       <!-- Section Title -->
@@ -144,9 +141,8 @@
 
       </div>
 
-    </section><!-- /About Section -->
+    </section>
 
-    <!-- Services Section -->
     <section id="services" class="featured-services section">
 
       <!-- Section Title -->
@@ -269,9 +265,8 @@
         </div>
 
       </div>
-    </section><!-- /Services Section -->
+    </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
 
       <!-- Section Title -->
@@ -400,9 +395,8 @@
 
       </div>
 
-    </section><!-- /Portfolio Section -->
+    </section>
 
-    <!-- Team Section -->
     <section id="team" class="team section light-background">
 
       <!-- Section Title -->
@@ -479,9 +473,8 @@
 
       </div>
 
-    </section><!-- /Team Section -->
+    </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="contact section">
 
       <!-- Section Title -->
@@ -558,8 +551,7 @@
 
       </div>
 
-    </section><!-- /Contact Section -->
-
+    </section>
   </main>
 
   <footer id="footer" class="footer">
@@ -584,10 +576,8 @@
 
   </footer>
 
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Preloader -->
   <div id="preloader">
     <div></div>
     <div></div>
@@ -595,7 +585,6 @@
     <div></div>
   </div>
 
-  <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
@@ -606,21 +595,17 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
   <script>
     function sendMessage() {
-      // Obtén los valores de los campos
       const name = document.getElementById('name').value.trim();
       const message = document.getElementById('message').value.trim();
   
-      // Limpia errores previos
       clearErrors();
   
       let isValid = true;
   
-      // Valida cada campo
       if (!name) {
         showError('name', 'Por favor ingresa tu nombre.');
         isValid = false;
@@ -631,33 +616,25 @@
         isValid = false;
       }
   
-      // Si no es válido, detén la ejecución
       if (!isValid) return;
   
-      // Tu número de WhatsApp
       const phoneNumber = '4811531126';
       const url = `https://wa.me/${phoneNumber}?text=Hola%20equipo%20de%20*Código%20Creativo%20Dev*:%0A%0AMi%20nombre%20es%20*${name}*%2C%20y%20estoy%20interesado%20en%20consultar%20lo%20siguiente:%0A${message}%0A%0AQuedo%20atento%20a%20su%20pronta%20respuesta.%20Muchas%20gracias%20por%20su%20atención.`;
       
-      // Abre el enlace en una nueva pestaña
       window.open(url, '_blank');
   
-      // Limpia los campos del formulario
       clearForm();
     }
   
-    // Función para mostrar el error
     function showError(fieldId, message) {
       const inputField = document.getElementById(fieldId);
       const errorField = document.getElementById(`${fieldId}-error`);
       
-      // Agregar borde rojo
       inputField.classList.add('is-invalid');
       
-      // Mostrar mensaje de error
       errorField.textContent = message;
     }
   
-    // Función para limpiar errores previos
     function clearErrors() {
       const inputs = document.querySelectorAll('.form-control');
       inputs.forEach(input => input.classList.remove('is-invalid'));
@@ -666,7 +643,6 @@
       errors.forEach(error => error.textContent = '');
     }
   
-    // Función para limpiar los campos del formulario
     function clearForm() {
       document.getElementById('name').value = '';
       document.getElementById('message').value = '';
